@@ -5,25 +5,25 @@ const testimonials = [
   {
     name: "Sarah Jenkins",
     role: "SEO Director at GrowthFlow",
-    content: "For the last 2 plus years we have been using seo-group-buy.in and it has improved our marketing work a lot.",
+    content: "Recently we started using seogroupbuy.in and it has improved our marketing work a lot.",
     rating: 5
   },
   {
     name: "Michael Chen",
     role: "Independent Consultant",
-    content: "After joining seo-group-buy.in our agency tool cost reduced almost 90 percent. Now we use SEMrush Ahrefs and many other tools in one place.",
+    content: "After joining seogroupbuy.in our agency tool cost reduced almost 90 percent. Now we use SEMrush Ahrefs and many other tools in one place.",
     rating: 5
   },
   {
     name: "Elena Rodriguez",
     role: "Head of Content at TechPulse",
-    content: "This is my honest review. I searched many group buy sites but none were cooperative. seo-group-buy.in support was genuine and helpful.",
+    content: "This is my honest review. I searched many group buy sites but none were cooperative. seogroupbuy.in support was genuine and helpful.",
     rating: 5
   },
   {
     name: "Ali Raza",
     role: "Freelance SEO",
-    content: "I am very satisfied with seo-group-buy.in. I have been using their services for a long time and the experience is consistently good.",
+    content: "I am very satisfied with seogroupbuy.in. I have been using their services for a long time and the experience is consistently good.",
     rating: 5
   },
   {
@@ -47,13 +47,13 @@ const testimonials = [
   {
     name: "Priya Sharma",
     role: "Growth Marketer",
-    content: "seo-group-buy.in is very useful. I am getting access to Canva SEMrush Moz Storyblocks Envato Elements and many more tools in one place.",
+    content: "seogroupbuy.in is very useful. I am getting access to Canva SEMrush Moz Storyblocks Envato Elements and many more tools in one place.",
     rating: 5
   },
   {
     name: "Omar Farooq",
     role: "Affiliate Marketer",
-    content: "Overall seo-group-buy.in provides stable tools at a cheap price compared to other providers.",
+    content: "Overall seogroupbuy.in provides stable tools at a cheap price compared to other providers.",
     rating: 5
   },
   {
@@ -65,7 +65,7 @@ const testimonials = [
   {
     name: "Ahmed Khan",
     role: "Agency Owner",
-    content: "seo-group-buy.in helped us save a lot on monthly subscriptions. The tools load fast and support is cooperative.",
+    content: "seogroupbuy.in helped us save a lot on monthly subscriptions. The tools load fast and support is cooperative.",
     rating: 5
   },
 ];
@@ -83,7 +83,7 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div className="flex gap-6 overflow-x-auto pb-4 [-webkit-overflow-scrolling:touch]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {testimonials.map((testimonial, i) => (
             <motion.div
               key={testimonial.name}
@@ -91,7 +91,7 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="glass-card relative group hover:border-blue-500/30 transition-all flex-none w-[280px] md:w-[320px] xl:w-[calc((100%-96px)/5)] p-6 rounded-[2rem]"
+              className="glass-card relative group hover:border-blue-500/30 transition-all p-6 rounded-[2rem]"
             >
               <Quote className="absolute top-5 right-5 h-10 w-10 text-blue-500/10 group-hover:text-blue-500/20 transition-colors" />
               

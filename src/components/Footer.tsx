@@ -44,7 +44,7 @@ export function Footer() {
                   Pricing
                 </a>
                 <a
-                  href="mailto:support@seo-group-buy.in"
+                  href="mailto:support@seogroupbuy.in"
                   className="group inline-flex items-center gap-2 hover:text-white transition-colors"
                 >
                   <span className="h-1.5 w-1.5 rounded-full bg-blue-500/60 group-hover:bg-blue-400 transition-colors" />
