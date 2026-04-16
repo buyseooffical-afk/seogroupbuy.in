@@ -47,8 +47,7 @@ export function Hero() {
             </h1>
             
             <p className="text-xl text-zinc-400 mb-10 leading-relaxed max-w-xl">
-              Get instant access to Ahrefs, SEMrush, Canva Pro, and 50+ other premium tools 
-              starting at just $15/month. No limits, no downtime, just results.
+              Get premium SEO tools through a reliable SEO group buy. Run audits, track keywords, and research backlinks in minutes with Ahrefs group buy and SEMrush group buy access. Simple pricing and fast support so you can focus on rankings.
             </p>
 
             {/* Tool Search / Access Simulation */}

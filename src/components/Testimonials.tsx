@@ -31,8 +31,7 @@ export function Testimonials() {
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-bold font-display mb-6">What Customers Say About Our <span className="text-blue-500">Group Buy SEO Tools</span></h2>
           <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
-            Join 12,000+ SEO professionals, agencies, and freelancers who rely on 
-            SEO Hub for their daily marketing operations.
+            Real marketers use our SEO tools group buy to research keywords, check backlinks, and deliver client reports on time. Here is what they say after switching from expensive subscriptions.
           </p>
         </div>
 

@@ -24,8 +24,7 @@ export function SystemStatus() {
               <span className="text-blue-500">99.9%</span> Uptime Guarantee
             </h2>
             <p className="text-xl text-zinc-400">
-              We monitor our global tool clusters 24/7. Our proprietary load-balancing 
-              technology ensures you never experience downtime during critical audits.
+              We keep a close eye on tool access day and night. When a seat gets slow or a login stops working, we rotate sessions fast so your SEO audits and keyword research do not get stuck.
             </p>
           </div>
           <div className="flex gap-4">

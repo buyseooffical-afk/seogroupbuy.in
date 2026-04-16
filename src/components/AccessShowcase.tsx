@@ -22,16 +22,14 @@ export function AccessShowcase() {
             </h2>
             
             <p className="text-xl text-zinc-400 mb-10 leading-relaxed">
-              Forget about sharing passwords or clearing cookies. Our custom browser 
-              extension logs you into any tool instantly with a single click. 
-              It's fast, secure, and works on all major browsers.
+              Stop dealing with login issues and constant rechecks. Open your dashboard, click the tool you need, and start working. This one click access setup is built for SEO tools group buy users who want speed without the headache.
             </p>
 
             <div className="space-y-6 mb-10">
               {[
-                { icon: ShieldCheck, title: "Secure Session Bridge", desc: "Encrypted connection that keeps your data private." },
-                { icon: Globe, title: "Multi-Region Support", desc: "Bypass geo-blocks with our global proxy network." },
-                { icon: Zap, title: "Zero Latency", desc: "Optimized clusters for lightning-fast tool loading." },
+                { icon: ShieldCheck, title: "Secure Session Bridge", desc: "Your work stays private and your session stays stable." },
+                { icon: Globe, title: "Multi-Region Support", desc: "Smooth access from different locations when you need it." },
+                { icon: Zap, title: "Fast Loading", desc: "Quick tool open times so audits and research do not slow you down." },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <div className="h-10 w-10 rounded-xl bg-blue-600/10 flex items-center justify-center shrink-0">

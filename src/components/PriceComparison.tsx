@@ -24,11 +24,10 @@ export function PriceComparison() {
             whileInView={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-bold font-display mb-6"
           >
-            Get Package <span className="text-blue-500">Save $1000</span> Monthly on SEO Tools
+            Get Package Save $1000 Monthly on SEO Tools
           </motion.h2>
           <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
-            Buying these tools individually would cost you a fortune every month. 
-            Get them all for a fraction of the price.
+            If you buy each SEO tool separately you end up paying hundreds every month. With our SEO group buy you get the same core features you need for audits, keywords, and competitor research at a price that makes sense.
           </p>
         </div>
 
@@ -80,7 +79,7 @@ export function PriceComparison() {
                     <div className="flex items-center gap-4">
                       <span className="text-4xl font-bold font-display line-through text-zinc-700">${totalOriginal}</span>
                       <ArrowRight className="text-zinc-700" />
-                      <span className="text-5xl font-bold font-display text-blue-500">$15</span>
+                      <span className="text-5xl font-bold font-display text-blue-500">$25</span>
                     </div>
                   </div>
                   <div className="bg-blue-600/10 border border-blue-500/20 rounded-3xl p-6 text-center">

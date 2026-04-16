@@ -44,8 +44,7 @@ export function ToolGrid() {
               Premium Group Buy <span className="text-blue-500">SEO Tools Collection</span>
             </h2>
             <p className="text-xl text-zinc-400">
-              No more individual subscriptions. Get direct access to the world's best 
-              SEO and marketing tools through our secure group buy portal.
+              Pick the tools you actually use for SEO. Keyword research, backlinks, audits, writing, and design all in one place. This SEO tools group buy helps freelancers and agencies keep costs low and productivity high.
             </p>
           </div>
           <div className="relative w-full md:w-80 group">
@@ -109,8 +108,7 @@ export function ToolGrid() {
           <div className="blue-glow -top-20 -right-20 w-64 h-64 opacity-20" />
           <h3 className="text-3xl font-bold font-display mb-4">Need a Specific Tool?</h3>
           <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
-            We're constantly expanding our toolset. If you need a tool that isn't listed, 
-            request it and we'll try to add it to our next cluster update.
+            If your favorite tool is not listed, tell us. We review requests weekly and add the most needed SEO and marketing tools as soon as seats are available.
           </p>
           <Button size="lg" className="h-14 px-10 rounded-full bg-blue-600 hover:bg-blue-700 font-bold">
             <Plus className="mr-2 h-5 w-5" /> Request a New Tool

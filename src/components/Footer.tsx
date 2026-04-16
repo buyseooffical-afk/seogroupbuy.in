@@ -23,7 +23,7 @@ export function Footer() {
               </div>
 
               <p className="mt-4 max-w-sm text-sm leading-relaxed text-zinc-400">
-                Premium SEO tools at group-buy pricing—built for agencies, freelancers, and growth teams.
+                Premium SEO tools at group buy pricing. Built for agencies, freelancers, and teams who want results without huge monthly bills.
               </p>
 
             </div>

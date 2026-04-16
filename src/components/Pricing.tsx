@@ -1,61 +1,133 @@
 import { Button } from "@/components/ui/button";
-import { Check, Zap, Shield, Globe } from "lucide-react";
+import {
+  BarChart3,
+  BookOpen,
+  Bot,
+  Briefcase,
+  CheckCircle2,
+  Compass,
+  FileText,
+  Globe,
+  Headphones,
+  Layers,
+  LineChart,
+  Palette,
+  PenLine,
+  Search,
+  ShieldCheck,
+  ShoppingBag,
+  Sparkles,
+  Video,
+  Zap,
+  Crown,
+  Shield,
+  Images,
+} from "lucide-react";
 import { motion } from "motion/react";
+
+type PlanFeature = {
+  label: string;
+  icon: React.ElementType;
+};
 
 const plans = [
   {
-    name: "Starter",
-    price: "15",
-    description: "Perfect for freelancers and small projects.",
+    name: "Lite Essentials",
+    price: "10",
+    buyNowHref: "https://members.seotoolsgroupbuy.us/cart/index/product/id/56/c/",
+    description: "Best for beginners who want cheap SEO tools group buy access to get started fast.",
     features: [
-      "5 Premium SEO Tools", 
-      "Instant Access", 
-      "99.9% Uptime", 
-      "24/7 Live Chat Support", 
-      "Secure Web Portal",
-      "Daily Usage Limits"
-    ],
-    button: "Get Started",
+      { label: "Keyword research essentials", icon: Search },
+      { label: "Basic site audit checks", icon: ShieldCheck },
+      { label: "Simple design tools", icon: Palette },
+      { label: "Learning resources", icon: BookOpen },
+      { label: "Email support", icon: Headphones },
+    ] satisfies PlanFeature[],
     popular: false,
     icon: Globe,
     color: "blue"
   },
   {
-    name: "Professional",
-    price: "25",
-    description: "The complete toolkit for serious marketers.",
+    name: "Growth Starter",
+    price: "15",
+    buyNowHref: "https://members.seotoolsgroupbuy.us/cart/index/product/id/35/c/",
+    description: "Most balanced SEO group buy plan for daily work on client sites and content.",
     features: [
-      "All 50+ SEO Tools Included", 
-      "Ahrefs & SEMrush Full Access", 
-      "Canva Pro & Grammarly", 
-      "Priority Support", 
-      "VIP Tool Requests",
-      "Unlimited Usage",
-      "Browser Extension"
-    ],
-    button: "Go Pro",
+      { label: "Full SEO toolkit access", icon: Layers },
+      { label: "Keyword research + tracking", icon: LineChart },
+      { label: "AI writing support", icon: Bot },
+      { label: "Design & graphics tools", icon: Images },
+      { label: "Priority help", icon: Headphones },
+    ] satisfies PlanFeature[],
     popular: true,
     icon: Zap,
     color: "blue"
   },
   {
-    name: "Agency",
-    price: "89",
-    description: "Scale your agency with unlimited access.",
+    name: "Ahrefs\u00A0Power\u00A0Bundle",
+    price: "25",
+    buyNowHref: "https://members.seotoolsgroupbuy.us/cart/index/product/id/53/c/",
+    description: "For heavy research days when you need Ahrefs group buy style depth plus more.",
     features: [
-      "Everything in Pro", 
-      "Multi-User Access (5 Seats)", 
-      "White-label Dashboard", 
-      "Dedicated Account Manager", 
-      "Custom Tool Integrations",
-      "API Access",
-      "SLA Guarantee"
-    ],
-    button: "Contact Sales",
+      { label: "Backlink research workflows", icon: Compass },
+      { label: "Competitor analysis", icon: BarChart3 },
+      { label: "Advanced audits & reports", icon: FileText },
+      { label: "Content planning tools", icon: Sparkles },
+      { label: "Faster support response", icon: Headphones },
+    ] satisfies PlanFeature[],
     popular: false,
     icon: Shield,
     color: "purple"
   }
+  ,
+  {
+    name: "Writer Toolkit",
+    price: "15",
+    buyNowHref: "https://members.seotoolsgroupbuy.us/cart/index/product/id/42/c/",
+    description: "Made for writers who want SEO content tools, checks, and fast drafts in one place.",
+    features: [
+      { label: "AI writing suite", icon: Bot },
+      { label: "Grammar and tone checks", icon: CheckCircle2 },
+      { label: "Plagiarism style checks", icon: ShieldCheck },
+      { label: "Content research tools", icon: Search },
+      { label: "Ready to publish templates", icon: FileText },
+    ] satisfies PlanFeature[],
+    popular: false,
+    icon: PenLine,
+    color: "blue"
+  },
+  {
+    name: "Designer Pack",
+    price: "10",
+    buyNowHref: "https://members.seotoolsgroupbuy.us/cart/index/product/id/46/c/",
+    description: "For creatives who need quick designs, thumbnails, and social posts without extra cost.",
+    features: [
+      { label: "Design software access", icon: Palette },
+      { label: "Premium templates", icon: Layers },
+      { label: "Stock images and icons", icon: Images },
+      { label: "Video tools for reels", icon: Video },
+      { label: "Brand kit basics", icon: Briefcase },
+    ] satisfies PlanFeature[],
+    popular: false,
+    icon: Palette,
+    color: "purple"
+  },
+  {
+    name: "Mega All-Access",
+    price: "50",
+    buyNowHref: "https://members.seotoolsgroupbuy.us/cart/index/product/id/2/c/",
+    description: "All access bundle for teams that need everything from SEO to e‑commerce research.",
+    features: [
+      { label: "All premium tools unlocked", icon: Crown },
+      { label: "SEO + content + design stack", icon: Layers },
+      { label: "E‑commerce research suite", icon: ShoppingBag },
+      { label: "Learning platform access", icon: BookOpen },
+      { label: "Best support priority", icon: Headphones },
+    ] satisfies PlanFeature[],
+    popular: false,
+    icon: Crown,
+    color: "blue"
+  },
 ];
 
 export function Pricing() {
@@ -72,8 +144,7 @@ export function Pricing() {
           >
             <h2 className="text-4xl md:text-6xl font-bold font-display mb-6">Simple, <span className="text-blue-500">Transparent</span> Pricing</h2>
             <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
-              Choose the plan that's right for your business. No hidden fees, cancel anytime. 
-              All plans include our 100% uptime guarantee.
+              Choose the plan that fits your work. Pay monthly, keep it simple, and upgrade anytime as your projects grow. Every plan focuses on stable access to premium SEO tools.
             </p>
           </motion.div>
         </div>
@@ -111,30 +182,32 @@ export function Pricing() {
 
               <div className="space-y-4 mb-10 flex-grow">
                 {plan.features.map((feature) => (
-                  <div key={feature} className="flex items-center gap-3">
-                    <div className="h-5 w-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0">
-                      <Check className="h-3 w-3 text-blue-500" />
+                  <div key={feature.label} className="flex items-center gap-3">
+                    <div className="h-8 w-8 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0">
+                      <feature.icon className="h-4 w-4 text-blue-400" />
                     </div>
-                    <span className="text-zinc-300 text-sm">{feature}</span>
+                    <span className="text-zinc-300 text-sm">{feature.label}</span>
                   </div>
                 ))}
               </div>
 
-              <Button 
-                size="lg" 
-                className={`h-16 rounded-2xl font-bold text-lg transition-all ${plan.popular ? 'bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-600/20' : 'bg-white/5 hover:bg-white/10 border border-white/10'}`}
+              <a
+                href={plan.buyNowHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block cursor-pointer"
               >
-                {plan.button}
-              </Button>
+                <Button
+                  size="lg"
+                  className={`h-16 w-full rounded-2xl font-bold text-lg transition-all cursor-pointer ${plan.popular ? 'bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-600/20' : 'bg-white/5 hover:bg-white/10 border border-white/10'}`}
+                >
+                  Buy Now
+                </Button>
+              </a>
             </motion.div>
           ))}
         </div>
 
-        <div className="mt-20 text-center">
-          <p className="text-zinc-500 text-sm">
-            Need a custom plan for a larger team? <a href="#" className="text-blue-500 font-bold hover:underline">Contact our sales team</a>
-          </p>
-        </div>
       </div>
     </section>
   );

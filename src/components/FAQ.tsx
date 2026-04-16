@@ -44,7 +44,7 @@ export function FAQ() {
           >
             <h2 className="text-4xl md:text-6xl font-bold font-display mb-6">Frequently Asked Questions About <span className="text-blue-500">Group Buy SEO Tools</span></h2>
             <p className="text-xl text-zinc-400">
-              Everything you need to know about the world's most advanced SEO group buy platform.
+              Clear answers about SEO group buy access, tool usage, privacy, and support. If you are new to group buy SEO tools you will find this section helpful.
             </p>
           </motion.div>
 

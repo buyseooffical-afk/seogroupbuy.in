@@ -35,7 +35,7 @@ export function Process() {
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-bold font-display mb-6">How Group Buy <span className="text-blue-500">SEO Tools Work</span></h2>
           <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
-            We've streamlined the process to get you from zero to SEO hero in under 2 minutes.
+            Create your account, choose a plan, then open the tools you need from one dashboard. It is simple even if you are new to SEO group buy tools.
           </p>
         </div>
 
