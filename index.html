@@ -27,10 +27,47 @@
       content="Get premium SEO tools at group-buy pricing. Access Ahrefs, SEMrush, Moz, Canva and more—fast, simple, and affordable."
     />
     <meta name="twitter:image" content="https://seogroupbuy.in/og-image.svg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SEO Group Buy",
+        "url": "https://seogroupbuy.in/",
+        "logo": "https://seogroupbuy.in/og-image.svg"
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "SEO Group Buy",
+        "url": "https://seogroupbuy.in/"
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      (function () {
+        var GA_ID = "%VITE_GA_MEASUREMENT_ID%";
+        if (!GA_ID || GA_ID.indexOf("%VITE_") === 0) return;
+        var s1 = document.createElement("script");
+        s1.async = true;
+        s1.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+        document.head.appendChild(s1);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          // eslint-disable-next-line prefer-rest-params
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", GA_ID);
+      })();
+    </script>
   </body>
 </html>
 
